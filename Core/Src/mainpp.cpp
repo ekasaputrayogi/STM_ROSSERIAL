@@ -32,7 +32,7 @@ void setup()
 {
 nh.initNode();
 nh.advertise(num_pub);
-nh.getHardware()->setBaud(57600); // Setting Perubahan baudrate 
+
 
 }
 void loop()

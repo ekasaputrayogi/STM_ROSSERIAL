@@ -560,7 +560,7 @@ static void MX_USART1_UART_Init(void)
  80005e0:	4b11      	ldr	r3, [pc, #68]	; (8000628 <MX_USART1_UART_Init+0x4c>)
  80005e2:	4a12      	ldr	r2, [pc, #72]	; (800062c <MX_USART1_UART_Init+0x50>)
  80005e4:	601a      	str	r2, [r3, #0]
-  huart1.Init.BaudRate = 57600;
+  huart1.Init.BaudRate = 57600;//geus setting baudrate
  80005e6:	4b10      	ldr	r3, [pc, #64]	; (8000628 <MX_USART1_UART_Init+0x4c>)
  80005e8:	f44f 4261 	mov.w	r2, #57600	; 0xe100
  80005ec:	605a      	str	r2, [r3, #4]
@@ -3470,7 +3470,7 @@ nh.advertise(num_pub);
  80018d6:	4904      	ldr	r1, [pc, #16]	; (80018e8 <setup+0x1c>)
  80018d8:	4802      	ldr	r0, [pc, #8]	; (80018e4 <setup+0x18>)
  80018da:	f000 f89f 	bl	8001a1c <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE>
-
+//nh.getHardware()->setBaud(57600); // Setting Perubahan baudrate
 
 }
  80018de:	bf00      	nop
